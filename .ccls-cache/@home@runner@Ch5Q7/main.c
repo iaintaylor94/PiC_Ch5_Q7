@@ -1,16 +1,16 @@
 /* The decimal point before the 2 in the printf statement specifies the minimum characters to display to the terminal (cents (0-9) will have a leading 0) */
 
 /* 
-  Decimal:
+  Decimal: {i/d(signed), u(unsigned), o(octal), x/X(hexadecimal)}
     Leading blanks:
       %[width]i
-      %0[width]i
 
     Leading zeros:
       %[.precision]i
+      %0[width]i
 
-  Float:
-    %[width].[precision]f
+  Float: {f/F(fload/double), e/E(scientific), g/G(pretty)}
+    %[width][.precision]f
     width = minimum #chars (including '.')
     precision = #chars after '.'
 */
